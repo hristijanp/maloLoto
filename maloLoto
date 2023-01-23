@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<int> loto = new List<int> { 9, 7, 8, 1, 5 };
+            loto.Reverse();
+            loto.Sort();
+            int num1 = loto[4] * 100;
+            int num2 = loto[3] * 10;
+            int num3 = loto[2];
+
+            int trocifren = num1 + num2 + num3;
+            int dupli = trocifren * 2;
+            Console.WriteLine(trocifren);
+            Console.WriteLine(dupli);
+        }
+    }
+}
